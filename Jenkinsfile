@@ -34,7 +34,7 @@ pipeline {
                     // Lefuttatjuk a Publish-t a FolderProfile2 profil alapján.
                     // A logfájlba irányítást (>build.log) elhagyhatod, mert a Jenkins 
                     // a teljes konzolos kimenetet automatikusan elmenti és mutatja a webes felületen.
-                    bat 'msbuild TestApplication.sln /t:Publish /p:Configuration=Release /p:PublishProfile=FolderProfile2'
+                    bat '"C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\msbuild" TestApplication.sln /t:Publish /p:Configuration=Release /p:PublishProfile=FolderProfile2'
                 }
             }
         }
