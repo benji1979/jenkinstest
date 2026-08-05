@@ -9,7 +9,7 @@ namespace TestApplication
 
         private void button1_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Other test message", "Test");
+            MessageBox.Show("New test message", "Test");
         }
     }
 }
