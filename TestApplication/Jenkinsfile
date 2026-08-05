@@ -1,5 +1,9 @@
 pipeline {
-    agent { label 'csharp-nsis-node' } // A Windows build node-od címkéje
+    
+	
+	agent {
+        label 'Windows-build' 
+    }	
 
     stages {
         stage('Checkout') {
